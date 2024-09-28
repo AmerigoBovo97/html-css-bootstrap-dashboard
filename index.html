@@ -50,8 +50,9 @@
 
     <main>
 
-        <div class="container">
+        <div class="container d-lg-flex">
 
+          <div class="container"> <!-- title and list of books -->
             <div class="d-flex justify-content-between mb-4"> <!-- title with the "add book" button -->
                 <h1 class="fs-2 fw-normal mb-0">Catalogo Libri</h1>
                 <button type="button" class="btn btn-primary">Aggingi Libro</button>
@@ -180,6 +181,34 @@
                   </tbody>
 
                 </table>
+          </div>
+
+          <div class="conatiner"> <!-- cards with todo list and f.a.q. -->
+            
+            <div class="card border-secondary mb-3 col"> <!-- todo list card -->
+              <div class="card-header fs-2">ToDo</div>
+              <div class="card-body text-secondary">
+                <ul class="list-group">
+                  <li class="list-group-item"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Chiamare segretaria</li>
+                  <li class="list-group-item"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Mandare avvisi prestiti scaduti</li>
+                  <li class="list-group-item"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Ordinare nuovi libri</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card border-secondary mb-3 col"> <!-- f.a.q. card -->
+              <div class="card-header fs-2">F.A.Q.</div>
+              <div class="card-body text-secondary">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between"><span>Come aggiungere un nuovo libro?</span><i class="fa-solid fa-angle-down"></i></li>
+                  <li class="list-group-item d-flex justify-content-between"><span>Come posso accedere all'anagrafica utenti?</span><i class="fa-solid fa-angle-down"></i></li>
+                  <li class="list-group-item d-flex justify-content-between"><span>Posso usare questa dashboard da mobile?</span><i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+              </div>
+            </div>
+            
+
+          </div>
 
         </div>
 
