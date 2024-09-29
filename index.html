@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /fontawesome -->
 
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
@@ -201,9 +203,62 @@
               <div class="card-header fs-2">F.A.Q.</div>
               <div class="card-body text-secondary">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item d-flex justify-content-between align-items-center"><span>Come aggiungere un nuovo libro?</span><i class="fa-solid fa-angle-down ms-2"></i></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center"><span>Come posso accedere all'anagrafica utenti?</span><i class="fa-solid fa-angle-down ms-2"></i></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center"><span>Posso usare questa dashboard da mobile?</span><i class="fa-solid fa-angle-down ms-2"></i></li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="accordion">
+                      <div class="accordion-item ab-accordion">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button ab-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collaps-1" aria-expanded="true" aria-controls="collaps-1">
+                            Come aggiungere un nuovo libro?
+                          </button>
+                        </h2>
+                        <div id="collaps-1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Premi il pulsante "Aggiungi Libro" in altro a sinistra e compila il form con le informazioni richieste
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="accordion">
+                      <div class="accordion-item ab-accordion">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button ab-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                            Come posso accedere all'anagrafica utenti?
+                          </button>
+                        </h2>
+                        <div id="collapse-2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Purtroppo questa sezione deve ancora essere implementata
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="accordion">
+                      <div class="accordion-item ab-accordion">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button ab-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                            Posso usare questa dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="collapse-3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Assolutamente si,  Con tutti i soldi che mi è costata sarebbe un peccato non utilizzarla!!
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </li>
+
+
                 </ul>
               </div>
             </div>

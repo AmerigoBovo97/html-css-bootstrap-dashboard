@@ -1,0 +1,8 @@
+.ab-accordion{
+    border: none;
+}
+
+.ab-accordion-button:not(.collapsed){
+    background-color: transparent;
+    box-shadow: none;
+}
