@@ -16,14 +16,14 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark mb-4" data-bs-theme="dark">
         <div class="container-fluid">
-            <a href="index.html"><img src="img/duck.png" alt="really cute duck logo" width="60" height="60"></a>
+            <img src="img/duck.png" alt="really cute duck logo" width="60" height="60">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Catalogo Libri</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Anagrafica Utenti</a>
@@ -38,9 +38,75 @@
             
             </div>
         </div>
-        </nav>
+    </nav>
 
+    <!-- book's info form -->
 
+    <main>
+        <div class="container">
+            
+            <h1 class="fs-2 fw-medium mb-4">Nuovo Libro</h1>
+
+            <form>
+
+                <div class="row mb-3"> <!-- row author name -->
+                    <div class="col">
+                        <label for="author-name" class="form-label fw-medium fs-5">Nome Autore</label>
+                        <input type="text" class="form-control " id="author-name" placeholder="inteserisci il nome dell'autore" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col">
+                        <label for="author-last-name" class="form-label fw-medium fs-5">Cognome Autore</label>
+                        <input type="text" class="form-control" id="author-last-name" placeholder="inteserisci il cognome dell'autore" aria-describedby="emailHelp">
+                    </div>
+                </div>
+
+                <div class="row mb-3"> <!-- row title -->
+                    <div class="col">
+                        <label for="title" class="form-label fw-medium fs-5">Titolo</label>
+                        <input type="text" class="form-control" id="title" placeholder="inteserisci il nome dell'autore" aria-describedby="emailHelp">
+                        <div class="form-text" id="basic-addon4">Titolo versione italiana</div>
+                    </div>
+                </div>
+
+                <div class="row mb-4"> <!-- genre and release year -->
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label class="form-label fw-medium fs-5">Genere</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Biografia</option>
+                            <option value="2">Giallo</option>
+                            <option value="3">Fantascienza</option>
+                            <option value="3">Narrativa</option>
+                            <option value="3">Per ragazzi</option>
+                            <option value="3">Fantasy</option>
+                            <option value="3">Horror</option>
+                          </select>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="release-year" class="form-label fw-medium fs-5">Anno di Pubblicazione</label>
+                        <input type="number" class="form-control" id="release-year" placeholder="inteserisci l'anno" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="isbn" class="form-label fw-medium fs-5">ISBN#</label>
+                        <input type="number" class="form-control" id="isbn" placeholder="inteserisci codice ISBN#" aria-describedby="emailHelp">
+                    </div>
+                </div>
+
+                <hr>
+
+                <label for="title" class="form-label fw-medium fs-5">Note</label>
+                <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="floatingTextarea2" style="height: 100px"></textarea>
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input">
+                  <label class="form-check-label fw-medium fs-6" for="exampleCheck1">Disponibile anche in digitale</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+
+            </form>
+
+        </div>
+    </main>
 
 </body>
 </html>
